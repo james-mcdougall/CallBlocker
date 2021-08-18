@@ -23,18 +23,45 @@
                                 <color key="textColor" name="DullRed"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmP-Un-Ucd">
+                                <rect key="frame" x="20" y="812" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bmd-O2-xq2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" name="DullRed"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aBD-Ih-FNt" kind="presentation" identifier="ToCallsStoryboard" modalPresentationStyle="fullScreen" id="VKz-b6-250"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kmP-Un-Ucd" secondAttribute="trailing" constant="20" id="2gg-e6-TQ4"/>
+                            <constraint firstItem="kmP-Un-Ucd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OaG-fM-fQt"/>
                             <constraint firstItem="5NG-Ol-LrN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oyi-g1-Cpt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kmP-Un-Ucd" secondAttribute="bottom" id="prU-nd-eOL"/>
                             <constraint firstItem="5NG-Ol-LrN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ucy-5O-ixA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="kmP-Un-Ucd" id="0h7-t5-qQ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="89"/>
+        </scene>
+        <!--CallsStoryboard-->
+        <scene sceneID="njK-s1-dS1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Calls" referencedIdentifier="CallsStoryboard" id="aBD-Ih-FNt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wg2-dR-xMI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="327"/>
         </scene>
     </scenes>
     <resources>

@@ -10,21 +10,22 @@ import UIKit
 class MainViewController: UIViewController {
     
     //MARK: IBOutlets -
+    @IBOutlet weak var getStartedButton: UIButton!
     
     //MARK: UI Properties -
+    let customButtons = CustomButtons()
     
     //MARK: Functional Properties -
+    
 
     //MARK: App Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureUI()
     }
     
     //MARK: UI Configuration -
-    
-    
-    //MARK: Actions -
+    func configureUI() {
+        customButtons.dullRedHollowButton(button: getStartedButton)
+    }
 }
-
-//MARK: Extensions -
