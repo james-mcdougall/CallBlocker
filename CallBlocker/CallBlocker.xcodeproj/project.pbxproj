@@ -14,6 +14,7 @@
 		A82EAC7426CCB93100D47367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82EAC7226CCB93100D47367 /* LaunchScreen.storyboard */; };
 		A82EAC8726CCBB1200D47367 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EAC8626CCBB1200D47367 /* MainViewController.swift */; };
 		A82EAC8B26CCBBB100D47367 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EAC8A26CCBBB100D47367 /* TemplateViewController.swift */; };
+		A82EAC8F26CCBC3100D47367 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EAC8E26CCBC3100D47367 /* CustomButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A82EAC7526CCB93100D47367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A82EAC8626CCBB1200D47367 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A82EAC8A26CCBBB100D47367 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
+		A82EAC8E26CCBC3100D47367 /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		A82EAC8026CCBA5C00D47367 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A82EAC8D26CCBC1E00D47367 /* CustomUI */,
 				A82EAC8426CCBA8600D47367 /* Storyboards */,
 			);
 			path = Views;
@@ -116,6 +119,14 @@
 				A82EAC8A26CCBBB100D47367 /* TemplateViewController.swift */,
 			);
 			path = TemplateViewController;
+			sourceTree = "<group>";
+		};
+		A82EAC8D26CCBC1E00D47367 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				A82EAC8E26CCBC3100D47367 /* CustomButtons.swift */,
+			);
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				A82EAC6826CCB92E00D47367 /* AppDelegate.swift in Sources */,
 				A82EAC8B26CCBBB100D47367 /* TemplateViewController.swift in Sources */,
 				A82EAC6A26CCB92E00D47367 /* SceneDelegate.swift in Sources */,
+				A82EAC8F26CCBC3100D47367 /* CustomButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
