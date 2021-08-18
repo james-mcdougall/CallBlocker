@@ -26,6 +26,6 @@ class MainViewController: UIViewController {
     
     //MARK: UI Configuration -
     func configureUI() {
-        customButtons.dullRedHollowButton(button: getStartedButton)
+        customButtons.solidPillButton(button: getStartedButton)
     }
 }

@@ -25,7 +25,8 @@ class CallsViewController: UIViewController {
     
     
     
-    @IBOutlet weak var callButton: UIButton!
+	@IBOutlet weak var blockButton: UIButton!
+	@IBOutlet weak var callButton: UIButton!
     
     //MARK: UI Properties -
     let customButtons = CustomButtons()
@@ -53,7 +54,8 @@ class CallsViewController: UIViewController {
         customButtons.dullRedCircleButton(button: starButton)
         customButtons.dullRedCircleButton(button: poundButton)
         
-        customButtons.dullRedHollowButton(button: callButton)
+        customButtons.solidPillButton(button: callButton)
+		customButtons.solidPillButton(button: blockButton)
 
 
         

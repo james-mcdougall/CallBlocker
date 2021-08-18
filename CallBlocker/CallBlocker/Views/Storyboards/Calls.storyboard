@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ga3-eX-mGN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qZy-Cj-v4R">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,7 +13,7 @@
         <!--Calls View Controller-->
         <scene sceneID="crs-dl-ddl">
             <objects>
-                <viewController storyboardIdentifier="CallsStoryboard" id="ga3-eX-mGN" customClass="CallsViewController" customModule="CallBlocker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ga3-eX-mGN" customClass="CallsViewController" customModule="CallBlocker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9AO-cD-lrm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,16 +22,16 @@
                                 <rect key="frame" x="20" y="98" width="374" height="700"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="bpr-o8-g1g">
-                                        <rect key="frame" x="17" y="3" width="340" height="694"/>
+                                        <rect key="frame" x="17" y="2.5" width="340" height="695.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+1 (234) 567-8910" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMr-9B-T2z">
-                                                <rect key="frame" x="0.0" y="0.0" width="340" height="72"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type number here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMr-9B-T2z">
+                                                <rect key="frame" x="0.0" y="0.0" width="340" height="73.5"/>
                                                 <color key="textColor" name="DullRed"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IvG-Ku-h8v">
-                                                <rect key="frame" x="0.0" y="113" width="340" height="460"/>
+                                                <rect key="frame" x="0.0" y="114.5" width="340" height="460"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lHs-hv-pZj">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="460"/>
@@ -44,7 +44,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="1">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="v35-yO-bel"/>
@@ -58,7 +58,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="4">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="b9L-Vq-suW"/>
@@ -72,7 +72,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="7">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="TvS-SV-dM7"/>
@@ -86,7 +86,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="*">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="aGO-G2-hTR"/>
@@ -105,7 +105,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="2">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="DfE-Rx-JbK"/>
@@ -119,7 +119,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="5">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="YqY-pS-ria"/>
@@ -133,7 +133,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="8">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="hF2-DZ-Abx"/>
@@ -147,7 +147,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="0">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="WRi-eC-qd0"/>
@@ -166,7 +166,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="3">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="LXB-FH-M64"/>
@@ -180,7 +180,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="6">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="Xks-TD-faB"/>
@@ -194,7 +194,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="9">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="UhA-HV-5dX"/>
@@ -208,7 +208,7 @@
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
                                                                 <state key="normal" title="#">
-                                                                    <color key="titleColor" name="DullRed"/>
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="9Nd-0H-lh3"/>
@@ -218,26 +218,46 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08u-eF-DAU">
-                                                <rect key="frame" x="0.0" y="614" width="340" height="80"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="5OD-dH-WqB"/>
-                                                </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="phone.fill" catalog="system">
-                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="callButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="6gr-ve-NGB"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eqY-De-NCG">
+                                                <rect key="frame" x="0.0" y="615.5" width="340" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppa-0f-5tk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="80"/>
+                                                        <color key="backgroundColor" name="DullRed"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="asR-49-Jiu"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" image="hand.raised.fill" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="callButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="wYe-kB-94t"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08u-eF-DAU">
+                                                        <rect key="frame" x="174" y="0.0" width="166" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="5OD-dH-WqB"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" image="phone.fill" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="callButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="6gr-ve-NGB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="NMr-9B-T2z" secondAttribute="trailing" id="2nX-Cy-3Iw"/>
                                             <constraint firstAttribute="trailing" secondItem="IvG-Ku-h8v" secondAttribute="trailing" id="6X0-QV-meV"/>
-                                            <constraint firstAttribute="trailing" secondItem="08u-eF-DAU" secondAttribute="trailing" id="KvN-tx-hxS"/>
-                                            <constraint firstItem="08u-eF-DAU" firstAttribute="leading" secondItem="bpr-o8-g1g" secondAttribute="leading" id="hI4-op-HsE"/>
+                                            <constraint firstItem="eqY-De-NCG" firstAttribute="leading" secondItem="bpr-o8-g1g" secondAttribute="leading" id="PKW-Pa-j6z"/>
+                                            <constraint firstAttribute="trailing" secondItem="eqY-De-NCG" secondAttribute="trailing" id="fAg-wU-VJ8"/>
                                             <constraint firstItem="NMr-9B-T2z" firstAttribute="leading" secondItem="bpr-o8-g1g" secondAttribute="leading" id="x5W-QH-J8y"/>
                                         </constraints>
                                     </stackView>
@@ -259,7 +279,9 @@
                             <constraint firstItem="oJM-ig-tVm" firstAttribute="centerX" secondItem="9AO-cD-lrm" secondAttribute="centerX" id="tD9-CC-2mw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aHj-cX-C5f"/>
                     <connections>
+                        <outlet property="blockButton" destination="Ppa-0f-5tk" id="3W6-06-f5v"/>
                         <outlet property="buttonEight" destination="Lsw-IU-M0Q" id="PSz-rG-r0T"/>
                         <outlet property="buttonFive" destination="Tmt-fy-hju" id="8us-Ye-tJQ"/>
                         <outlet property="buttonFour" destination="bTa-CX-rYu" id="LQ4-c7-fqe"/>
@@ -277,16 +299,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ac0-Zi-RIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="88.392857142857139"/>
+        </scene>
+        <!--Call-->
+        <scene sceneID="lRa-JK-SCB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="OPl-kX-BTz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Call" image="phone.fill" catalog="system" id="YAX-ti-6DE">
+                        <color key="badgeColor" name="DullRed"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jcv-ph-iX5">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ga3-eX-mGN" kind="relationship" relationship="rootViewController" id="9WJ-ns-v5L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzJ-4x-cPS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="88.392857142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IA1-WA-HIX">
+            <objects>
+                <tabBarController storyboardIdentifier="CallsStoryboard" automaticallyAdjustsScrollViewInsets="NO" id="qZy-Cj-v4R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VBX-ss-2gZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="DullRed"/>
+                        <color key="selectedImageTintColor" name="DullRed"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OPl-kX-BTz" kind="relationship" relationship="viewControllers" id="hI1-fK-MBQ"/>
+                        <segue destination="Thf-GQ-Dsh" kind="relationship" relationship="viewControllers" id="EQv-Zu-KHu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W8g-TG-kTY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+        </scene>
+        <!--BlockedCallersStoryboard-->
+        <scene sceneID="AIq-ee-WnI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="BlockedCallersStoryboard" storyboardName="BlockedCallers" referencedIdentifier="BlockedCallersStoryboard" id="Thf-GQ-Dsh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="YLI-4c-3Bj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8BR-fb-E35" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="518"/>
         </scene>
     </scenes>
     <resources>
+        <image name="hand.raised.fill" catalog="system" width="128" height="124"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <namedColor name="DullRed">
-            <color red="1" green="0.31764705882352939" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.31799998879432678" blue="0.27500000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

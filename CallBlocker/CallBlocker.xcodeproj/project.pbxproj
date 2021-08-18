@@ -17,6 +17,8 @@
 		A82EAC8F26CCBC3100D47367 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EAC8E26CCBC3100D47367 /* CustomButtons.swift */; };
 		A82EAC9C26CCC62B00D47367 /* Calls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82EAC9B26CCC62B00D47367 /* Calls.storyboard */; };
 		A82EAC9F26CCCD5E00D47367 /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EAC9E26CCCD5E00D47367 /* CallsViewController.swift */; };
+		A84F62A826CDA86900DEA3E1 /* BlockedCallers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84F62A726CDA86900DEA3E1 /* BlockedCallers.storyboard */; };
+		A84F62AB26CDB19600DEA3E1 /* BlockedCallersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84F62AA26CDB19600DEA3E1 /* BlockedCallersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		A82EAC8E26CCBC3100D47367 /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		A82EAC9B26CCC62B00D47367 /* Calls.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calls.storyboard; sourceTree = "<group>"; };
 		A82EAC9E26CCCD5E00D47367 /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
+		A84F62A726CDA86900DEA3E1 /* BlockedCallers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BlockedCallers.storyboard; sourceTree = "<group>"; };
+		A84F62AA26CDB19600DEA3E1 /* BlockedCallersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedCallersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				A82EAC8926CCBB9B00D47367 /* TemplateViewController */,
 				A82EAC8626CCBB1200D47367 /* MainViewController.swift */,
 				A82EAC9E26CCCD5E00D47367 /* CallsViewController.swift */,
+				A84F62AA26CDB19600DEA3E1 /* BlockedCallersViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 				A82EAC7226CCB93100D47367 /* LaunchScreen.storyboard */,
 				A82EAC6D26CCB92E00D47367 /* Main.storyboard */,
 				A82EAC9B26CCC62B00D47367 /* Calls.storyboard */,
+				A84F62A726CDA86900DEA3E1 /* BlockedCallers.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 				A82EAC7126CCB93100D47367 /* Assets.xcassets in Resources */,
 				A82EAC9C26CCC62B00D47367 /* Calls.storyboard in Resources */,
 				A82EAC6F26CCB92E00D47367 /* Main.storyboard in Resources */,
+				A84F62A826CDA86900DEA3E1 /* BlockedCallers.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +223,7 @@
 			files = (
 				A82EAC8726CCBB1200D47367 /* MainViewController.swift in Sources */,
 				A82EAC6826CCB92E00D47367 /* AppDelegate.swift in Sources */,
+				A84F62AB26CDB19600DEA3E1 /* BlockedCallersViewController.swift in Sources */,
 				A82EAC8B26CCBBB100D47367 /* TemplateViewController.swift in Sources */,
 				A82EAC6A26CCB92E00D47367 /* SceneDelegate.swift in Sources */,
 				A82EAC9F26CCCD5E00D47367 /* CallsViewController.swift in Sources */,
