@@ -66,9 +66,7 @@
 			children = (
 				A82EAC8026CCBA5C00D47367 /* Views */,
 				A82EAC8126CCBA6800D47367 /* Controllers */,
-				A82EAC6726CCB92E00D47367 /* AppDelegate.swift */,
-				A82EAC6926CCB92E00D47367 /* SceneDelegate.swift */,
-				A82EAC7026CCB93100D47367 /* Assets.xcassets */,
+				A84F62A326CD9B8500DEA3E1 /* App Resources */,
 				A82EAC7526CCB93100D47367 /* Info.plist */,
 			);
 			path = CallBlocker;
@@ -133,6 +131,16 @@
 				A82EAC8E26CCBC3100D47367 /* CustomButtons.swift */,
 			);
 			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		A84F62A326CD9B8500DEA3E1 /* App Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A82EAC6726CCB92E00D47367 /* AppDelegate.swift */,
+				A82EAC6926CCB92E00D47367 /* SceneDelegate.swift */,
+				A82EAC7026CCB93100D47367 /* Assets.xcassets */,
+			);
+			path = "App Resources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
