@@ -19,6 +19,7 @@
 		A82EAC9F26CCCD5E00D47367 /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EAC9E26CCCD5E00D47367 /* CallsViewController.swift */; };
 		A84F62A826CDA86900DEA3E1 /* BlockedCallers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84F62A726CDA86900DEA3E1 /* BlockedCallers.storyboard */; };
 		A84F62AB26CDB19600DEA3E1 /* BlockedCallersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84F62AA26CDB19600DEA3E1 /* BlockedCallersViewController.swift */; };
+		A89A4DD126CE9462001641E9 /* BlockedCallerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A4DD026CE9462001641E9 /* BlockedCallerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A82EAC9E26CCCD5E00D47367 /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
 		A84F62A726CDA86900DEA3E1 /* BlockedCallers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BlockedCallers.storyboard; sourceTree = "<group>"; };
 		A84F62AA26CDB19600DEA3E1 /* BlockedCallersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedCallersViewController.swift; sourceTree = "<group>"; };
+		A89A4DD026CE9462001641E9 /* BlockedCallerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedCallerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		A82EAC8226CCBA7300D47367 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A89A4DCF26CE944F001641E9 /* Cells */,
 				A82EAC8926CCBB9B00D47367 /* TemplateViewController */,
 				A82EAC8626CCBB1200D47367 /* MainViewController.swift */,
 				A82EAC9E26CCCD5E00D47367 /* CallsViewController.swift */,
@@ -139,6 +142,14 @@
 				A82EAC7026CCB93100D47367 /* Assets.xcassets */,
 			);
 			path = "App Resources";
+			sourceTree = "<group>";
+		};
+		A89A4DCF26CE944F001641E9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A89A4DD026CE9462001641E9 /* BlockedCallerTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 			files = (
 				A82EAC8726CCBB1200D47367 /* MainViewController.swift in Sources */,
 				A82EAC6826CCB92E00D47367 /* AppDelegate.swift in Sources */,
+				A89A4DD126CE9462001641E9 /* BlockedCallerTableViewCell.swift in Sources */,
 				A84F62AB26CDB19600DEA3E1 /* BlockedCallersViewController.swift in Sources */,
 				A82EAC8B26CCBBB100D47367 /* TemplateViewController.swift in Sources */,
 				A82EAC6A26CCB92E00D47367 /* SceneDelegate.swift in Sources */,
