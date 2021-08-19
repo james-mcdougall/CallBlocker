@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qZy-Cj-v4R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qZy-Cj-v4R">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,283 +18,297 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJM-ig-tVm">
-                                <rect key="frame" x="20" y="98" width="374" height="700"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NGe-bf-aip">
+                                <rect key="frame" x="29" y="97" width="356" height="702"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="bpr-o8-g1g">
-                                        <rect key="frame" x="17" y="2.5" width="340" height="695.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type number here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I5G-KK-nZP">
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="61.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="errorAndBlockLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISF-uc-dxg">
+                                        <rect key="frame" x="0.0" y="81.5" width="356" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="DullRed"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="553-X4-sYN">
+                                        <rect key="frame" x="8" y="122" width="340" height="580"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type number here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMr-9B-T2z">
-                                                <rect key="frame" x="0.0" y="0.0" width="340" height="73.5"/>
-                                                <color key="textColor" name="DullRed"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IvG-Ku-h8v">
-                                                <rect key="frame" x="0.0" y="114.5" width="340" height="460"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QYz-je-bUI">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="580"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lHs-hv-pZj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="460"/>
-                                                        <subviews>
-                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eG5-gS-jnX">
-                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="100" id="BCL-c9-Awv"/>
-                                                                    <constraint firstAttribute="height" constant="100" id="fcL-IB-dol"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="1">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="v35-yO-bel"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTa-CX-rYu">
-                                                                <rect key="frame" x="0.0" y="120" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="100" id="aMS-jy-Cux"/>
-                                                                    <constraint firstAttribute="width" constant="100" id="bDx-Lg-brW"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="4">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="b9L-Vq-suW"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVu-tg-68y">
-                                                                <rect key="frame" x="0.0" y="240" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="100" id="RL0-kZ-IMs"/>
-                                                                    <constraint firstAttribute="height" constant="100" id="cck-zn-lj1"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="7">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="TvS-SV-dM7"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnZ-BT-x4V">
-                                                                <rect key="frame" x="0.0" y="360" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="100" id="fl2-vF-0cw"/>
-                                                                    <constraint firstAttribute="width" constant="100" id="gyS-vK-DfT"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="*">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="aGO-G2-hTR"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mS8-AJ-V3l">
-                                                        <rect key="frame" x="120" y="0.0" width="100" height="460"/>
-                                                        <subviews>
-                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJt-6B-fcW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="100" id="rdO-d9-OL6"/>
-                                                                    <constraint firstAttribute="width" constant="100" id="xRM-VW-IXr"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="2">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="DfE-Rx-JbK"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tmt-fy-hju">
-                                                                <rect key="frame" x="0.0" y="120" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="100" id="RFL-QT-3KT"/>
-                                                                    <constraint firstAttribute="height" constant="100" id="YaS-Zm-bVa"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="5">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="YqY-pS-ria"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsw-IU-M0Q">
-                                                                <rect key="frame" x="0.0" y="240" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="100" id="j3X-tJ-70F"/>
-                                                                    <constraint firstAttribute="height" constant="100" id="ra3-tf-Lu6"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="8">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="hF2-DZ-Abx"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yso-SB-e9N">
-                                                                <rect key="frame" x="0.0" y="360" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="100" id="Dec-tv-xSN"/>
-                                                                    <constraint firstAttribute="height" constant="100" id="Is0-jK-3kS"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="0">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="WRi-eC-qd0"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aze-ur-uqw">
-                                                        <rect key="frame" x="240" y="0.0" width="100" height="460"/>
-                                                        <subviews>
-                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyO-b1-0xQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="100" id="7uM-6z-vYu"/>
-                                                                    <constraint firstAttribute="height" constant="100" id="kjJ-lG-QeR"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="3">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="LXB-FH-M64"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxL-rj-DET">
-                                                                <rect key="frame" x="0.0" y="120" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="100" id="DEr-5U-D11"/>
-                                                                    <constraint firstAttribute="height" constant="100" id="KQ8-E6-TcQ"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="6">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="Xks-TD-faB"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbN-N7-tzf">
-                                                                <rect key="frame" x="0.0" y="240" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="100" id="3qF-WG-5gk"/>
-                                                                    <constraint firstAttribute="width" constant="100" id="cna-2f-EnJ"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="9">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="UhA-HV-5dX"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqd-5v-gnM">
-                                                                <rect key="frame" x="0.0" y="360" width="100" height="100"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="100" id="FKW-vY-gOq"/>
-                                                                    <constraint firstAttribute="width" constant="100" id="fbS-K5-wtM"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="60"/>
-                                                                <state key="normal" title="#">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="9Nd-0H-lh3"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eqY-De-NCG">
-                                                <rect key="frame" x="0.0" y="615.5" width="340" height="80"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppa-0f-5tk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="80"/>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gf-mz-1U8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="Hvi-D1-C22"/>
+                                                            <constraint firstAttribute="width" constant="100" id="Kfh-8k-BMs"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="0oI-gk-PUx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIm-tr-dvS">
+                                                        <rect key="frame" x="0.0" y="120" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="OzU-Eq-Fge"/>
+                                                            <constraint firstAttribute="height" constant="100" id="sYe-MR-Nbh"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="vwu-q0-De6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlk-gK-hyO">
+                                                        <rect key="frame" x="0.0" y="240" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="YCz-sG-gFy"/>
+                                                            <constraint firstAttribute="width" constant="100" id="cYW-ea-W3C"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="lRJ-cO-cJt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X76-lB-5Sf">
+                                                        <rect key="frame" x="0.0" y="360" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="9ML-Lz-PPh"/>
+                                                            <constraint firstAttribute="height" constant="100" id="ZXS-1y-ew6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="*">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="B31-hz-zEP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMz-v4-WPG">
+                                                        <rect key="frame" x="0.0" y="480" width="100" height="100"/>
                                                         <color key="backgroundColor" name="DullRed"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="80" id="asR-49-Jiu"/>
+                                                            <constraint firstAttribute="height" constant="100" id="YM2-sA-SkO"/>
+                                                            <constraint firstAttribute="width" constant="100" id="izJ-NM-DFD"/>
                                                         </constraints>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="hand.raised.fill" catalog="system">
-                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="callButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="wYe-kB-94t"/>
+                                                            <action selector="blockButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="Z0K-PD-xrh"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08u-eF-DAU">
-                                                        <rect key="frame" x="174" y="0.0" width="166" height="80"/>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="y3n-Vc-yTi">
+                                                <rect key="frame" x="120" y="0.0" width="100" height="580"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoY-5X-DzS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="CeH-HJ-XQ3"/>
+                                                            <constraint firstAttribute="width" constant="100" id="sDi-df-Vcv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="gXw-IV-fWG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cf-rk-xeL">
+                                                        <rect key="frame" x="0.0" y="120" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="5Nq-px-S0b"/>
+                                                            <constraint firstAttribute="height" constant="100" id="pU4-vh-mHA"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="ieE-05-bXk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwz-yW-9Ku">
+                                                        <rect key="frame" x="0.0" y="240" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="btb-yE-Brk"/>
+                                                            <constraint firstAttribute="width" constant="100" id="hbG-8b-EtM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="Hjf-HG-JYC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjP-B1-Qrb">
+                                                        <rect key="frame" x="0.0" y="360" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="SjW-1W-9en"/>
+                                                            <constraint firstAttribute="width" constant="100" id="wOR-Uc-RNi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="hkQ-ub-xDj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6R-T0-n9b">
+                                                        <rect key="frame" x="0.0" y="480" width="100" height="100"/>
                                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="80" id="5OD-dH-WqB"/>
+                                                            <constraint firstAttribute="width" constant="100" id="PHK-jA-wEd"/>
+                                                            <constraint firstAttribute="height" constant="100" id="yUw-jt-C6L"/>
                                                         </constraints>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="phone.fill" catalog="system">
-                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="callButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="6gr-ve-NGB"/>
+                                                            <action selector="callButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="9oX-8n-XqE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fpN-Sv-T5a">
+                                                <rect key="frame" x="240" y="0.0" width="100" height="580"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHU-70-k46">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="1FC-Yt-b6f"/>
+                                                            <constraint firstAttribute="width" constant="100" id="6bv-0c-0ZN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="zxw-ZH-N7L"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3R-Os-VTD">
+                                                        <rect key="frame" x="0.0" y="120" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="EPL-mt-64a"/>
+                                                            <constraint firstAttribute="height" constant="100" id="haF-eh-9uK"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="RZc-nP-MpH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Eb-xk-k4i">
+                                                        <rect key="frame" x="0.0" y="240" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="eGT-e1-JFy"/>
+                                                            <constraint firstAttribute="height" constant="100" id="xa0-eR-8c2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="dzu-Pa-huJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNj-E0-wiD">
+                                                        <rect key="frame" x="0.0" y="360" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="jVf-dK-AqJ"/>
+                                                            <constraint firstAttribute="height" constant="100" id="w8L-yT-i6F"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="#">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dialButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="3lr-Nc-lEI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MW-za-rMY">
+                                                        <rect key="frame" x="0.0" y="480" width="100" height="100"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="5bz-TP-D1T"/>
+                                                            <constraint firstAttribute="width" constant="100" id="OU8-f3-Uhq"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="DullRed"/>
+                                                        <state key="normal" image="arrow.left.circle.fill" catalog="system">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="deleteButtonTapped:" destination="ga3-eX-mGN" eventType="touchUpInside" id="3fO-tX-jDg"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="NMr-9B-T2z" secondAttribute="trailing" id="2nX-Cy-3Iw"/>
-                                            <constraint firstAttribute="trailing" secondItem="IvG-Ku-h8v" secondAttribute="trailing" id="6X0-QV-meV"/>
-                                            <constraint firstItem="eqY-De-NCG" firstAttribute="leading" secondItem="bpr-o8-g1g" secondAttribute="leading" id="PKW-Pa-j6z"/>
-                                            <constraint firstAttribute="trailing" secondItem="eqY-De-NCG" secondAttribute="trailing" id="fAg-wU-VJ8"/>
-                                            <constraint firstItem="NMr-9B-T2z" firstAttribute="leading" secondItem="bpr-o8-g1g" secondAttribute="leading" id="x5W-QH-J8y"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="bpr-o8-g1g" firstAttribute="centerY" secondItem="oJM-ig-tVm" secondAttribute="centerY" id="BzA-XL-gRk"/>
-                                    <constraint firstAttribute="height" constant="700" id="Q0q-dy-bMD"/>
-                                    <constraint firstItem="bpr-o8-g1g" firstAttribute="centerX" secondItem="oJM-ig-tVm" secondAttribute="centerX" id="UAm-nd-y4T"/>
+                                    <constraint firstItem="I5G-KK-nZP" firstAttribute="leading" secondItem="NGe-bf-aip" secondAttribute="leading" id="51b-SJ-NvV"/>
+                                    <constraint firstAttribute="trailing" secondItem="553-X4-sYN" secondAttribute="trailing" constant="8" id="Gwh-x6-naS"/>
+                                    <constraint firstItem="ISF-uc-dxg" firstAttribute="leading" secondItem="NGe-bf-aip" secondAttribute="leading" id="HVb-px-mnj"/>
+                                    <constraint firstItem="553-X4-sYN" firstAttribute="leading" secondItem="NGe-bf-aip" secondAttribute="leading" constant="8" id="LRB-p6-ssF"/>
+                                    <constraint firstAttribute="trailing" secondItem="I5G-KK-nZP" secondAttribute="trailing" id="Q0b-ae-TVy"/>
+                                    <constraint firstAttribute="trailing" secondItem="ISF-uc-dxg" secondAttribute="trailing" id="ile-aQ-NFZ"/>
+                                    <constraint firstItem="553-X4-sYN" firstAttribute="centerX" secondItem="NGe-bf-aip" secondAttribute="centerX" id="sKu-jS-yBJ"/>
                                 </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QDL-Bz-LZh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QDL-Bz-LZh" firstAttribute="trailing" secondItem="oJM-ig-tVm" secondAttribute="trailing" constant="20" id="NaP-Wu-ZI4"/>
-                            <constraint firstItem="oJM-ig-tVm" firstAttribute="leading" secondItem="QDL-Bz-LZh" secondAttribute="leading" constant="20" id="bgI-LN-6pA"/>
-                            <constraint firstItem="oJM-ig-tVm" firstAttribute="centerY" secondItem="9AO-cD-lrm" secondAttribute="centerY" id="i8G-F5-8MZ"/>
-                            <constraint firstItem="oJM-ig-tVm" firstAttribute="centerX" secondItem="9AO-cD-lrm" secondAttribute="centerX" id="tD9-CC-2mw"/>
+                            <constraint firstItem="NGe-bf-aip" firstAttribute="centerY" secondItem="9AO-cD-lrm" secondAttribute="centerY" id="q5k-r3-9C3"/>
+                            <constraint firstItem="NGe-bf-aip" firstAttribute="centerX" secondItem="9AO-cD-lrm" secondAttribute="centerX" id="u0C-vs-5MG"/>
+                            <constraint firstItem="NGe-bf-aip" firstAttribute="centerY" secondItem="9AO-cD-lrm" secondAttribute="centerY" id="xao-E5-RaI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aHj-cX-C5f"/>
                     <connections>
-                        <outlet property="blockButton" destination="Ppa-0f-5tk" id="3W6-06-f5v"/>
-                        <outlet property="buttonEight" destination="Lsw-IU-M0Q" id="PSz-rG-r0T"/>
-                        <outlet property="buttonFive" destination="Tmt-fy-hju" id="8us-Ye-tJQ"/>
-                        <outlet property="buttonFour" destination="bTa-CX-rYu" id="LQ4-c7-fqe"/>
-                        <outlet property="buttonNine" destination="zbN-N7-tzf" id="5ec-Gd-i56"/>
-                        <outlet property="buttonOne" destination="eG5-gS-jnX" id="tgL-Ca-Af6"/>
-                        <outlet property="buttonSeven" destination="oVu-tg-68y" id="bWe-e2-rif"/>
-                        <outlet property="buttonSix" destination="CxL-rj-DET" id="g9c-Bo-Vah"/>
-                        <outlet property="buttonThree" destination="IyO-b1-0xQ" id="J2l-zi-8jf"/>
-                        <outlet property="buttonTwo" destination="sJt-6B-fcW" id="iUp-Lf-A11"/>
-                        <outlet property="buttonZero" destination="Yso-SB-e9N" id="pUN-eX-zw5"/>
-                        <outlet property="callButton" destination="08u-eF-DAU" id="2fs-Xd-Ksa"/>
-                        <outlet property="poundButton" destination="Bqd-5v-gnM" id="RdU-QF-nMy"/>
-                        <outlet property="starButton" destination="dnZ-BT-x4V" id="xkI-cb-dtQ"/>
+                        <outlet property="blockButton" destination="JMz-v4-WPG" id="4GL-hn-VHE"/>
+                        <outlet property="buttonEight" destination="Rwz-yW-9Ku" id="HUa-us-X50"/>
+                        <outlet property="buttonFive" destination="7cf-rk-xeL" id="AE5-pp-7Wd"/>
+                        <outlet property="buttonFour" destination="oIm-tr-dvS" id="c8y-hb-kSr"/>
+                        <outlet property="buttonNine" destination="8Eb-xk-k4i" id="72C-t7-kqm"/>
+                        <outlet property="buttonOne" destination="4Gf-mz-1U8" id="7JJ-0W-LDN"/>
+                        <outlet property="buttonSeven" destination="xlk-gK-hyO" id="Ket-0U-MCQ"/>
+                        <outlet property="buttonSix" destination="F3R-Os-VTD" id="dO1-gs-7aZ"/>
+                        <outlet property="buttonThree" destination="HHU-70-k46" id="Yms-XJ-4o5"/>
+                        <outlet property="buttonTwo" destination="SoY-5X-DzS" id="Yxb-i2-RIX"/>
+                        <outlet property="buttonZero" destination="EjP-B1-Qrb" id="dfN-de-hfY"/>
+                        <outlet property="callButton" destination="n6R-T0-n9b" id="2nY-si-8nB"/>
+                        <outlet property="deleteButton" destination="8MW-za-rMY" id="KX0-FG-rty"/>
+                        <outlet property="dialerTextField" destination="I5G-KK-nZP" id="5Lg-AZ-O3o"/>
+                        <outlet property="errorAndBlockLabel" destination="ISF-uc-dxg" id="CDH-IZ-Xb3"/>
+                        <outlet property="poundButton" destination="VNj-E0-wiD" id="P7M-IO-1Ep"/>
+                        <outlet property="starButton" destination="X76-lB-5Sf" id="51Q-jb-B2V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ac0-Zi-RIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -354,6 +368,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="hand.raised.fill" catalog="system" width="128" height="124"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <namedColor name="DullRed">

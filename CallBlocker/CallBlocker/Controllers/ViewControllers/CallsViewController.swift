@@ -9,6 +9,8 @@ import UIKit
 
 class CallsViewController: UIViewController {
 
+    @IBOutlet weak var dialerTextField: UITextField!
+    @IBOutlet weak var errorAndBlockLabel: UILabel!
     //MARK: IBOutlets -
     @IBOutlet weak var buttonOne: UIButton!
     @IBOutlet weak var buttonTwo: UIButton!
@@ -27,6 +29,7 @@ class CallsViewController: UIViewController {
     
 	@IBOutlet weak var blockButton: UIButton!
 	@IBOutlet weak var callButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
     
     //MARK: UI Properties -
     let customButtons = CustomButtons()
@@ -41,24 +44,21 @@ class CallsViewController: UIViewController {
     
     //MARK: UI Configuration -
     func configureUI() {
-        customButtons.dullRedCircleButton(button: buttonZero)
-        customButtons.dullRedCircleButton(button: buttonOne)
-        customButtons.dullRedCircleButton(button: buttonTwo)
-        customButtons.dullRedCircleButton(button: buttonThree)
-        customButtons.dullRedCircleButton(button: buttonFour)
-        customButtons.dullRedCircleButton(button: buttonFive)
-        customButtons.dullRedCircleButton(button: buttonSix)
-        customButtons.dullRedCircleButton(button: buttonSeven)
-        customButtons.dullRedCircleButton(button: buttonEight)
-        customButtons.dullRedCircleButton(button: buttonNine)
-        customButtons.dullRedCircleButton(button: starButton)
-        customButtons.dullRedCircleButton(button: poundButton)
-        
-        customButtons.solidPillButton(button: callButton)
-		customButtons.solidPillButton(button: blockButton)
-
-
-        
+        customButtons.circularButtonWithBorder(button: buttonZero)
+        customButtons.circularButtonWithBorder(button: buttonOne)
+        customButtons.circularButtonWithBorder(button: buttonTwo)
+        customButtons.circularButtonWithBorder(button: buttonThree)
+        customButtons.circularButtonWithBorder(button: buttonFour)
+        customButtons.circularButtonWithBorder(button: buttonFive)
+        customButtons.circularButtonWithBorder(button: buttonSix)
+        customButtons.circularButtonWithBorder(button: buttonSeven)
+        customButtons.circularButtonWithBorder(button: buttonEight)
+        customButtons.circularButtonWithBorder(button: buttonNine)
+        customButtons.circularButtonWithBorder(button: starButton)
+        customButtons.circularButtonWithBorder(button: poundButton)
+        customButtons.circularButtonNoBorder(button: blockButton)
+        customButtons.circularButtonNoBorder(button: callButton)
+        customButtons.circularButtonNoBorder(button: deleteButton)
     }
     /*
     // MARK: - Navigation
@@ -98,7 +98,7 @@ class CallsViewController: UIViewController {
         case 11:
             print("# was tapped")
         default:
-            print("No buttons were tapped")
+            print("This dialer has no buttons because its a dialer from the future man!")
         }
     }
     
@@ -106,6 +106,13 @@ class CallsViewController: UIViewController {
         print("Call Button Tapped")
     }
     
+    @IBAction func blockButtonTapped(_ sender: UIButton) {
+        print("Block Button Tapped")
+
+    }
+    @IBAction func deleteButtonTapped(_ sender: UIButton) {
+        print("Delete Button Tapped")
+    }
 }
 
 //MARK: Extensions -

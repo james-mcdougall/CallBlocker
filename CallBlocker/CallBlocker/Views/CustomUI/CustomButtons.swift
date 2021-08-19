@@ -26,9 +26,13 @@ struct CustomButtons {
 		button.layer.shadowOffset = CGSize(width: 5, height: 5)
 	}
     
-    func dullRedCircleButton(button: UIButton) {
+    func circularButtonWithBorder(button: UIButton) {
         button.layer.cornerRadius = button.frame.size.height / 2
         button.layer.borderWidth = 1
+    }
+    
+    func circularButtonNoBorder(button: UIButton) {
+        button.layer.cornerRadius = button.frame.size.height / 2
     }
     
 }

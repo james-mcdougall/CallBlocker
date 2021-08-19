@@ -88,7 +88,6 @@
 		A82EAC8126CCBA6800D47367 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A82EAC8326CCBA7A00D47367 /* ModelControllers */,
 				A82EAC8226CCBA7300D47367 /* ViewControllers */,
 			);
 			path = Controllers;
@@ -103,13 +102,6 @@
 				A84F62AA26CDB19600DEA3E1 /* BlockedCallersViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		A82EAC8326CCBA7A00D47367 /* ModelControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 		A82EAC8426CCBA8600D47367 /* Storyboards */ = {
