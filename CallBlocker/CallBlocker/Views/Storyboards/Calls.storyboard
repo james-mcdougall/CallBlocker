@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -55,6 +56,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="cuk-h7-VID" kind="show" identifier="editCaller" id="Pug-qz-UfT"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -80,8 +84,15 @@
                                 <segment title="ID"/>
                                 <segment title="Block"/>
                             </segments>
+                            <connections>
+                                <action selector="callerTypeChanged:" destination="faZ-Ld-XRC" eventType="valueChanged" id="exE-Aa-v9b"/>
+                            </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5VZ-do-wgG"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5VZ-do-wgG">
+                            <connections>
+                                <segue destination="cuk-h7-VID" kind="show" identifier="addCaller" id="sMh-ld-Z55"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="callerType" destination="tmp-t3-f4p" id="zBp-Nd-x07"/>
@@ -92,16 +103,113 @@
             </objects>
             <point key="canvasLocation" x="1795.6521739130437" y="-257.14285714285711"/>
         </scene>
-        <!--Blocked Callers View Controller-->
+        <!--Add/Edit Caller-->
         <scene sceneID="nK7-ih-e26">
             <objects>
                 <viewController id="cuk-h7-VID" customClass="BlockedCallersViewController" customModule="CallBlocker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hqd-47-Gn2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xkd-cy-Dau">
+                                <rect key="frame" x="8" y="108" width="398" height="223"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YKN-wR-FYg">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caller Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQa-18-uXG">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="tCi-7e-hBK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J9P-b0-dAm">
+                                                <rect key="frame" x="108" y="0.0" width="290" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RFz-au-2eD">
+                                        <rect key="frame" x="0.0" y="54" width="398" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-tl-oby">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="SkQ-PY-Jy3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qeo-dp-uCW">
+                                                <rect key="frame" x="108" y="0.0" width="290" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foh-IL-3it">
+                                        <rect key="frame" x="0.0" y="108" width="398" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="sbX-kv-FSp"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NJm-gX-f7L">
+                                        <rect key="frame" x="0.0" y="129" width="398" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount of number to block" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="RwC-ZY-3Gr">
+                                                <rect key="frame" x="0.0" y="0.0" width="225" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="225" id="YB4-j9-uic"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter 1k - 100k" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="djl-A9-Pf4">
+                                                <rect key="frame" x="233" y="0.0" width="165" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJ8-TN-lub">
+                                        <rect key="frame" x="0.0" y="183" width="398" height="40"/>
+                                        <color key="backgroundColor" name="DullRed"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="Generate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="foh-IL-3it" secondAttribute="trailing" id="ChU-qE-ZVG"/>
+                                    <constraint firstItem="foh-IL-3it" firstAttribute="leading" secondItem="Xkd-cy-Dau" secondAttribute="leading" id="DlY-DZ-aQd"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="DKx-Ax-z1w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xkd-cy-Dau" firstAttribute="leading" secondItem="DKx-Ax-z1w" secondAttribute="leading" constant="8" id="Hrc-YP-ho7"/>
+                            <constraint firstItem="Xkd-cy-Dau" firstAttribute="top" secondItem="DKx-Ax-z1w" secondAttribute="top" constant="20" id="N91-qL-1lG"/>
+                            <constraint firstItem="DKx-Ax-z1w" firstAttribute="trailing" secondItem="Xkd-cy-Dau" secondAttribute="trailing" constant="8" id="pji-ds-BRD"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Add/Edit Caller" id="f8a-Av-r72">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="M2G-dA-56O"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="amountOfNumbers" destination="djl-A9-Pf4" id="W6O-JW-jDi"/>
+                        <outlet property="callerName" destination="J9P-b0-dAm" id="V06-O9-QAc"/>
+                        <outlet property="callerNumber" destination="Qeo-dp-uCW" id="rDI-X6-Zit"/>
+                        <outlet property="saveButton" destination="M2G-dA-56O" id="NDb-kw-ozV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvg-1J-XoR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,12 +234,21 @@
             <point key="canvasLocation" x="885.50724637681162" y="-257.14285714285711"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Pug-qz-UfT"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <namedColor name="DullRed">
+            <color red="1" green="0.31799998879432678" blue="0.27500000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
