@@ -92,6 +92,18 @@ extension CallsViewController: UITableViewDataSource {
             break
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let blockedCallVC = segue.destination as? BlockedCallersViewController {
+                blockedCallVC.isBlocked = showBlocked
+                blockedCallVC.callerData = callerData
+                if let callCell = sender as? UITableViewCell,
+                    let indexPath = tableView.indexPath(for: callCell),
+                    let caller = resultsController.fetchedObjects?[indexPath.row] {
+                    blockedCallVC.caller = caller
+                }
+            }
+        }
 }
 
 extension CallsViewController: NSFetchedResultsControllerDelegate {

@@ -130,6 +130,9 @@
                                                 <rect key="frame" x="108" y="0.0" width="290" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textChanged:" destination="cuk-h7-VID" eventType="editingChanged" id="gBz-Q2-29n"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -149,6 +152,9 @@
                                                 <rect key="frame" x="108" y="0.0" width="290" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textChanged:" destination="cuk-h7-VID" eventType="editingChanged" id="ong-4i-FeR"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -202,7 +208,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add/Edit Caller" id="f8a-Av-r72">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="M2G-dA-56O"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="M2G-dA-56O">
+                            <connections>
+                                <action selector="saveTapped:" destination="cuk-h7-VID" id="7pF-fK-VLM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="amountOfNumbers" destination="djl-A9-Pf4" id="W6O-JW-jDi"/>

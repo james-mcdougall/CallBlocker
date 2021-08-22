@@ -96,7 +96,7 @@ class BlockedCallersViewController: UIViewController {
             caller.isBlocked = isBlocked
             caller.isRemoved = false
             caller.updatedDate = Date()
-            self.callerData.saveContext()
+            callerData.saveContext()
         }
         dismiss(animated: true, completion: nil)
     }
