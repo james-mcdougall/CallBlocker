@@ -21,8 +21,7 @@ class CallsViewController: UIViewController {
     }
     
     //MARK: UI Configuration -
-    
-    }
+
     /*
     // MARK: - Navigation
 
@@ -35,5 +34,4 @@ class CallsViewController: UIViewController {
     
     //MARK: Actions -
 }
-
 //MARK: Extensions -
