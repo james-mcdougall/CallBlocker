@@ -55,6 +55,14 @@ class CallsViewController: UIViewController {
         self.loadData()
     }
     
+    @IBAction func reloadTapped(_ sender: UIButton) {
+            CXCallDirectoryManager.sharedInstance.reloadExtension(withIdentifier: "groups", completionHandler: { (error) in
+                if let error = error {
+                    print("Error reloading extension: \(error.localizedDescription)")
+                }
+            })
+        }
+    
     
 }
 //MARK: Extensions -
