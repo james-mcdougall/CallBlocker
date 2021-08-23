@@ -7,37 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A822DD3C26D3E78C006C08CF /* CallListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A822DD3B26D3E78C006C08CF /* CallListViewController.swift */; };
-		A822DD3F26D3E83F006C08CF /* CallBlocker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A822DD3D26D3E83F006C08CF /* CallBlocker.xcdatamodeld */; };
-		A822DD4926D3E8C4006C08CF /* CallerData.h in Headers */ = {isa = PBXBuildFile; fileRef = A822DD4726D3E8C4006C08CF /* CallerData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A822DD4C26D3E8C4006C08CF /* CallerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A822DD4526D3E8C4006C08CF /* CallerData.framework */; };
-		A822DD4D26D3E8C4006C08CF /* CallerData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A822DD4526D3E8C4006C08CF /* CallerData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A82EAC6826CCB92E00D47367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EAC6726CCB92E00D47367 /* AppDelegate.swift */; };
-		A82EAC6A26CCB92E00D47367 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EAC6926CCB92E00D47367 /* SceneDelegate.swift */; };
-		A82EAC6F26CCB92E00D47367 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82EAC6D26CCB92E00D47367 /* Main.storyboard */; };
-		A82EAC7126CCB93100D47367 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A82EAC7026CCB93100D47367 /* Assets.xcassets */; };
-		A82EAC7426CCB93100D47367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82EAC7226CCB93100D47367 /* LaunchScreen.storyboard */; };
-		A82EAC8F26CCBC3100D47367 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82EAC8E26CCBC3100D47367 /* CustomButtons.swift */; };
+		A822DD6226D3EA64006C08CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A822DD6126D3EA64006C08CF /* AppDelegate.swift */; };
+		A822DD6426D3EA64006C08CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A822DD6326D3EA64006C08CF /* SceneDelegate.swift */; };
+		A822DD6926D3EA64006C08CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A822DD6726D3EA64006C08CF /* Main.storyboard */; };
+		A822DD6B26D3EA66006C08CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A822DD6A26D3EA66006C08CF /* Assets.xcassets */; };
+		A822DD6E26D3EA66006C08CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A822DD6C26D3EA66006C08CF /* LaunchScreen.storyboard */; };
+		A822DD7A26D3EAF6006C08CF /* CallListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A822DD7926D3EAF6006C08CF /* CallListViewController.swift */; };
+		A822DD8726D3EBE4006C08CF /* CallerData.h in Headers */ = {isa = PBXBuildFile; fileRef = A822DD8526D3EBE4006C08CF /* CallerData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A822DD8A26D3EBE4006C08CF /* CallerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A822DD8326D3EBE4006C08CF /* CallerData.framework */; };
+		A822DD8B26D3EBE4006C08CF /* CallerData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A822DD8326D3EBE4006C08CF /* CallerData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A822DD9026D3EC04006C08CF /* CallBlocker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A822DD7B26D3EB93006C08CF /* CallBlocker.xcdatamodeld */; };
+		A822DD9226D3EC4F006C08CF /* CallerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A822DD9126D3EC4F006C08CF /* CallerData.swift */; };
+		A822DD9726D3F544006C08CF /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A822DD9626D3F544006C08CF /* AddEditViewController.swift */; };
+		A822DD9F26D3F834006C08CF /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A822DD9E26D3F834006C08CF /* CallDirectoryHandler.swift */; };
+		A822DDA326D3F834006C08CF /* CallBlockerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A822DD9C26D3F834006C08CF /* CallBlockerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A822DDA926D3F874006C08CF /* CallerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A822DD8326D3EBE4006C08CF /* CallerData.framework */; };
+		A822DDAA26D3F874006C08CF /* CallerData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A822DD8326D3EBE4006C08CF /* CallerData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A822DD4A26D3E8C4006C08CF /* PBXContainerItemProxy */ = {
+		A822DD8826D3EBE4006C08CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A82EAC5C26CCB92E00D47367 /* Project object */;
+			containerPortal = A822DD5626D3EA64006C08CF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A822DD4426D3E8C4006C08CF;
+			remoteGlobalIDString = A822DD8226D3EBE4006C08CF;
+			remoteInfo = CallerData;
+		};
+		A822DDA126D3F834006C08CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A822DD5626D3EA64006C08CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A822DD9B26D3F834006C08CF;
+			remoteInfo = CallBlockerExtension;
+		};
+		A822DDAB26D3F874006C08CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A822DD5626D3EA64006C08CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A822DD8226D3EBE4006C08CF;
 			remoteInfo = CallerData;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A822DD5126D3E8C4006C08CF /* Embed Frameworks */ = {
+		A822DD8F26D3EBE4006C08CF /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A822DD4D26D3E8C4006C08CF /* CallerData.framework in Embed Frameworks */,
+				A822DD8B26D3EBE4006C08CF /* CallerData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A822DDA726D3F834006C08CF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A822DDA326D3F834006C08CF /* CallBlockerExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A822DDAD26D3F874006C08CF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A822DDAA26D3F874006C08CF /* CallerData.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,133 +86,145 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A822DD3B26D3E78C006C08CF /* CallListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListViewController.swift; sourceTree = "<group>"; };
-		A822DD3E26D3E83F006C08CF /* CallBlocker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CallBlocker.xcdatamodel; sourceTree = "<group>"; };
-		A822DD4526D3E8C4006C08CF /* CallerData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CallerData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A822DD4726D3E8C4006C08CF /* CallerData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallerData.h; sourceTree = "<group>"; };
-		A822DD4826D3E8C4006C08CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A82EAC6426CCB92E00D47367 /* CallBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A82EAC6726CCB92E00D47367 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A82EAC6926CCB92E00D47367 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A82EAC6E26CCB92E00D47367 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A82EAC7026CCB93100D47367 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A82EAC7326CCB93100D47367 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A82EAC7526CCB93100D47367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A82EAC8E26CCBC3100D47367 /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
+		A822DD5E26D3EA64006C08CF /* CallBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A822DD6126D3EA64006C08CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A822DD6326D3EA64006C08CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A822DD6826D3EA64006C08CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A822DD6A26D3EA66006C08CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A822DD6D26D3EA66006C08CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A822DD6F26D3EA66006C08CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A822DD7926D3EAF6006C08CF /* CallListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListViewController.swift; sourceTree = "<group>"; };
+		A822DD7C26D3EB93006C08CF /* CallBlocker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CallBlocker.xcdatamodel; sourceTree = "<group>"; };
+		A822DD8326D3EBE4006C08CF /* CallerData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CallerData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A822DD8526D3EBE4006C08CF /* CallerData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallerData.h; sourceTree = "<group>"; };
+		A822DD8626D3EBE4006C08CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A822DD9126D3EC4F006C08CF /* CallerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallerData.swift; sourceTree = "<group>"; };
+		A822DD9326D3ECD8006C08CF /* CallBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallBlocker.entitlements; sourceTree = "<group>"; };
+		A822DD9626D3F544006C08CF /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
+		A822DD9C26D3F834006C08CF /* CallBlockerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallBlockerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A822DD9E26D3F834006C08CF /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		A822DDA026D3F834006C08CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A822DDAE26D3F890006C08CF /* CallBlockerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallBlockerExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A822DD4226D3E8C4006C08CF /* Frameworks */ = {
+		A822DD5B26D3EA64006C08CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A822DD8A26D3EBE4006C08CF /* CallerData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A822DD8026D3EBE4006C08CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A82EAC6126CCB92E00D47367 /* Frameworks */ = {
+		A822DD9926D3F834006C08CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A822DD4C26D3E8C4006C08CF /* CallerData.framework in Frameworks */,
+				A822DDA926D3F874006C08CF /* CallerData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A822DD4626D3E8C4006C08CF /* CallerData */ = {
+		A822DD5526D3EA64006C08CF = {
 			isa = PBXGroup;
 			children = (
-				A822DD3D26D3E83F006C08CF /* CallBlocker.xcdatamodeld */,
-				A822DD4726D3E8C4006C08CF /* CallerData.h */,
-				A822DD4826D3E8C4006C08CF /* Info.plist */,
-			);
-			path = CallerData;
-			sourceTree = "<group>";
-		};
-		A82EAC5B26CCB92E00D47367 = {
-			isa = PBXGroup;
-			children = (
-				A82EAC6626CCB92E00D47367 /* CallBlocker */,
-				A822DD4626D3E8C4006C08CF /* CallerData */,
-				A82EAC6526CCB92E00D47367 /* Products */,
-				A88680CE26D343CA00979E8A /* Frameworks */,
+				A822DD6026D3EA64006C08CF /* CallBlocker */,
+				A822DD8426D3EBE4006C08CF /* CallerData */,
+				A822DD9D26D3F834006C08CF /* CallBlockerExtension */,
+				A822DD5F26D3EA64006C08CF /* Products */,
+				A822DDA826D3F874006C08CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		A82EAC6526CCB92E00D47367 /* Products */ = {
+		A822DD5F26D3EA64006C08CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A82EAC6426CCB92E00D47367 /* CallBlocker.app */,
-				A822DD4526D3E8C4006C08CF /* CallerData.framework */,
+				A822DD5E26D3EA64006C08CF /* CallBlocker.app */,
+				A822DD8326D3EBE4006C08CF /* CallerData.framework */,
+				A822DD9C26D3F834006C08CF /* CallBlockerExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A82EAC6626CCB92E00D47367 /* CallBlocker */ = {
+		A822DD6026D3EA64006C08CF /* CallBlocker */ = {
 			isa = PBXGroup;
 			children = (
-				A82EAC8026CCBA5C00D47367 /* Views */,
-				A82EAC8126CCBA6800D47367 /* Controllers */,
-				A84F62A326CD9B8500DEA3E1 /* App Resources */,
-				A82EAC7526CCB93100D47367 /* Info.plist */,
+				A822DD9326D3ECD8006C08CF /* CallBlocker.entitlements */,
+				A822DD7826D3EAD9006C08CF /* Views */,
+				A822DD7626D3EABA006C08CF /* Controllers */,
+				A822DD7526D3EAAB006C08CF /* AppResources */,
+				A822DD6F26D3EA66006C08CF /* Info.plist */,
 			);
 			path = CallBlocker;
 			sourceTree = "<group>";
 		};
-		A82EAC8026CCBA5C00D47367 /* Views */ = {
+		A822DD7526D3EAAB006C08CF /* AppResources */ = {
 			isa = PBXGroup;
 			children = (
-				A82EAC8D26CCBC1E00D47367 /* CustomUI */,
-				A82EAC8426CCBA8600D47367 /* Storyboards */,
+				A822DD6126D3EA64006C08CF /* AppDelegate.swift */,
+				A822DD6326D3EA64006C08CF /* SceneDelegate.swift */,
+				A822DD6A26D3EA66006C08CF /* Assets.xcassets */,
 			);
-			path = Views;
+			path = AppResources;
 			sourceTree = "<group>";
 		};
-		A82EAC8126CCBA6800D47367 /* Controllers */ = {
+		A822DD7626D3EABA006C08CF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A82EAC8226CCBA7300D47367 /* ViewControllers */,
+				A822DD7726D3EAC6006C08CF /* ViewControllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		A82EAC8226CCBA7300D47367 /* ViewControllers */ = {
+		A822DD7726D3EAC6006C08CF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A822DD3B26D3E78C006C08CF /* CallListViewController.swift */,
+				A822DD7926D3EAF6006C08CF /* CallListViewController.swift */,
+				A822DD9626D3F544006C08CF /* AddEditViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		A82EAC8426CCBA8600D47367 /* Storyboards */ = {
+		A822DD7826D3EAD9006C08CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A82EAC7226CCB93100D47367 /* LaunchScreen.storyboard */,
-				A82EAC6D26CCB92E00D47367 /* Main.storyboard */,
+				A822DD6726D3EA64006C08CF /* Main.storyboard */,
+				A822DD6C26D3EA66006C08CF /* LaunchScreen.storyboard */,
 			);
-			path = Storyboards;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		A82EAC8D26CCBC1E00D47367 /* CustomUI */ = {
+		A822DD8426D3EBE4006C08CF /* CallerData */ = {
 			isa = PBXGroup;
 			children = (
-				A82EAC8E26CCBC3100D47367 /* CustomButtons.swift */,
+				A822DD7B26D3EB93006C08CF /* CallBlocker.xcdatamodeld */,
+				A822DD8526D3EBE4006C08CF /* CallerData.h */,
+				A822DD8626D3EBE4006C08CF /* Info.plist */,
+				A822DD9126D3EC4F006C08CF /* CallerData.swift */,
 			);
-			path = CustomUI;
+			path = CallerData;
 			sourceTree = "<group>";
 		};
-		A84F62A326CD9B8500DEA3E1 /* App Resources */ = {
+		A822DD9D26D3F834006C08CF /* CallBlockerExtension */ = {
 			isa = PBXGroup;
 			children = (
-				A82EAC6726CCB92E00D47367 /* AppDelegate.swift */,
-				A82EAC6926CCB92E00D47367 /* SceneDelegate.swift */,
-				A82EAC7026CCB93100D47367 /* Assets.xcassets */,
+				A822DDAE26D3F890006C08CF /* CallBlockerExtension.entitlements */,
+				A822DD9E26D3F834006C08CF /* CallDirectoryHandler.swift */,
+				A822DDA026D3F834006C08CF /* Info.plist */,
 			);
-			path = "App Resources";
+			path = CallBlockerExtension;
 			sourceTree = "<group>";
 		};
-		A88680CE26D343CA00979E8A /* Frameworks */ = {
+		A822DDA826D3F874006C08CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -181,25 +234,46 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A822DD4026D3E8C4006C08CF /* Headers */ = {
+		A822DD7E26D3EBE4006C08CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A822DD4926D3E8C4006C08CF /* CallerData.h in Headers */,
+				A822DD8726D3EBE4006C08CF /* CallerData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A822DD4426D3E8C4006C08CF /* CallerData */ = {
+		A822DD5D26D3EA64006C08CF /* CallBlocker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A822DD4E26D3E8C4006C08CF /* Build configuration list for PBXNativeTarget "CallerData" */;
+			buildConfigurationList = A822DD7226D3EA66006C08CF /* Build configuration list for PBXNativeTarget "CallBlocker" */;
 			buildPhases = (
-				A822DD4026D3E8C4006C08CF /* Headers */,
-				A822DD4126D3E8C4006C08CF /* Sources */,
-				A822DD4226D3E8C4006C08CF /* Frameworks */,
-				A822DD4326D3E8C4006C08CF /* Resources */,
+				A822DD5A26D3EA64006C08CF /* Sources */,
+				A822DD5B26D3EA64006C08CF /* Frameworks */,
+				A822DD5C26D3EA64006C08CF /* Resources */,
+				A822DD8F26D3EBE4006C08CF /* Embed Frameworks */,
+				A822DDA726D3F834006C08CF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A822DD8926D3EBE4006C08CF /* PBXTargetDependency */,
+				A822DDA226D3F834006C08CF /* PBXTargetDependency */,
+			);
+			name = CallBlocker;
+			productName = CallBlocker;
+			productReference = A822DD5E26D3EA64006C08CF /* CallBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A822DD8226D3EBE4006C08CF /* CallerData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A822DD8C26D3EBE4006C08CF /* Build configuration list for PBXNativeTarget "CallerData" */;
+			buildPhases = (
+				A822DD7E26D3EBE4006C08CF /* Headers */,
+				A822DD7F26D3EBE4006C08CF /* Sources */,
+				A822DD8026D3EBE4006C08CF /* Frameworks */,
+				A822DD8126D3EBE4006C08CF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -207,46 +281,50 @@
 			);
 			name = CallerData;
 			productName = CallerData;
-			productReference = A822DD4526D3E8C4006C08CF /* CallerData.framework */;
+			productReference = A822DD8326D3EBE4006C08CF /* CallerData.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A82EAC6326CCB92E00D47367 /* CallBlocker */ = {
+		A822DD9B26D3F834006C08CF /* CallBlockerExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A82EAC7826CCB93100D47367 /* Build configuration list for PBXNativeTarget "CallBlocker" */;
+			buildConfigurationList = A822DDA426D3F834006C08CF /* Build configuration list for PBXNativeTarget "CallBlockerExtension" */;
 			buildPhases = (
-				A82EAC6026CCB92E00D47367 /* Sources */,
-				A82EAC6126CCB92E00D47367 /* Frameworks */,
-				A82EAC6226CCB92E00D47367 /* Resources */,
-				A822DD5126D3E8C4006C08CF /* Embed Frameworks */,
+				A822DD9826D3F834006C08CF /* Sources */,
+				A822DD9926D3F834006C08CF /* Frameworks */,
+				A822DD9A26D3F834006C08CF /* Resources */,
+				A822DDAD26D3F874006C08CF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A822DD4B26D3E8C4006C08CF /* PBXTargetDependency */,
+				A822DDAC26D3F874006C08CF /* PBXTargetDependency */,
 			);
-			name = CallBlocker;
-			productName = CallBlocker;
-			productReference = A82EAC6426CCB92E00D47367 /* CallBlocker.app */;
-			productType = "com.apple.product-type.application";
+			name = CallBlockerExtension;
+			productName = CallBlockerExtension;
+			productReference = A822DD9C26D3F834006C08CF /* CallBlockerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A82EAC5C26CCB92E00D47367 /* Project object */ = {
+		A822DD5626D3EA64006C08CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					A822DD4426D3E8C4006C08CF = {
+					A822DD5D26D3EA64006C08CF = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					A82EAC6326CCB92E00D47367 = {
-						CreatedOnToolsVersion = 12.4;
+					A822DD8226D3EBE4006C08CF = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+					A822DD9B26D3F834006C08CF = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = A82EAC5F26CCB92E00D47367 /* Build configuration list for PBXProject "CallBlocker" */;
+			buildConfigurationList = A822DD5926D3EA64006C08CF /* Build configuration list for PBXProject "CallBlocker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -254,80 +332,107 @@
 				en,
 				Base,
 			);
-			mainGroup = A82EAC5B26CCB92E00D47367;
-			productRefGroup = A82EAC6526CCB92E00D47367 /* Products */;
+			mainGroup = A822DD5526D3EA64006C08CF;
+			productRefGroup = A822DD5F26D3EA64006C08CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A82EAC6326CCB92E00D47367 /* CallBlocker */,
-				A822DD4426D3E8C4006C08CF /* CallerData */,
+				A822DD5D26D3EA64006C08CF /* CallBlocker */,
+				A822DD8226D3EBE4006C08CF /* CallerData */,
+				A822DD9B26D3F834006C08CF /* CallBlockerExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A822DD4326D3E8C4006C08CF /* Resources */ = {
+		A822DD5C26D3EA64006C08CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A822DD6E26D3EA66006C08CF /* LaunchScreen.storyboard in Resources */,
+				A822DD6B26D3EA66006C08CF /* Assets.xcassets in Resources */,
+				A822DD6926D3EA64006C08CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A822DD8126D3EBE4006C08CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A82EAC6226CCB92E00D47367 /* Resources */ = {
+		A822DD9A26D3F834006C08CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A82EAC7426CCB93100D47367 /* LaunchScreen.storyboard in Resources */,
-				A82EAC7126CCB93100D47367 /* Assets.xcassets in Resources */,
-				A82EAC6F26CCB92E00D47367 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A822DD4126D3E8C4006C08CF /* Sources */ = {
+		A822DD5A26D3EA64006C08CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A822DD9726D3F544006C08CF /* AddEditViewController.swift in Sources */,
+				A822DD7A26D3EAF6006C08CF /* CallListViewController.swift in Sources */,
+				A822DD6226D3EA64006C08CF /* AppDelegate.swift in Sources */,
+				A822DD6426D3EA64006C08CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A82EAC6026CCB92E00D47367 /* Sources */ = {
+		A822DD7F26D3EBE4006C08CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A822DD3C26D3E78C006C08CF /* CallListViewController.swift in Sources */,
-				A82EAC6826CCB92E00D47367 /* AppDelegate.swift in Sources */,
-				A82EAC6A26CCB92E00D47367 /* SceneDelegate.swift in Sources */,
-				A822DD3F26D3E83F006C08CF /* CallBlocker.xcdatamodeld in Sources */,
-				A82EAC8F26CCBC3100D47367 /* CustomButtons.swift in Sources */,
+				A822DD9226D3EC4F006C08CF /* CallerData.swift in Sources */,
+				A822DD9026D3EC04006C08CF /* CallBlocker.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A822DD9826D3F834006C08CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A822DD9F26D3F834006C08CF /* CallDirectoryHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A822DD4B26D3E8C4006C08CF /* PBXTargetDependency */ = {
+		A822DD8926D3EBE4006C08CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A822DD4426D3E8C4006C08CF /* CallerData */;
-			targetProxy = A822DD4A26D3E8C4006C08CF /* PBXContainerItemProxy */;
+			target = A822DD8226D3EBE4006C08CF /* CallerData */;
+			targetProxy = A822DD8826D3EBE4006C08CF /* PBXContainerItemProxy */;
+		};
+		A822DDA226D3F834006C08CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A822DD9B26D3F834006C08CF /* CallBlockerExtension */;
+			targetProxy = A822DDA126D3F834006C08CF /* PBXContainerItemProxy */;
+		};
+		A822DDAC26D3F874006C08CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A822DD8226D3EBE4006C08CF /* CallerData */;
+			targetProxy = A822DDAB26D3F874006C08CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A82EAC6D26CCB92E00D47367 /* Main.storyboard */ = {
+		A822DD6726D3EA64006C08CF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A82EAC6E26CCB92E00D47367 /* Base */,
+				A822DD6826D3EA64006C08CF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A82EAC7226CCB93100D47367 /* LaunchScreen.storyboard */ = {
+		A822DD6C26D3EA66006C08CF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A82EAC7326CCB93100D47367 /* Base */,
+				A822DD6D26D3EA66006C08CF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -335,63 +440,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A822DD4F26D3E8C4006C08CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6R6MQNLHPL;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CallerData/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesMcDougall.CallerData;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A822DD5026D3E8C4006C08CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6R6MQNLHPL;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CallerData/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesMcDougall.CallerData;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A82EAC7626CCB93100D47367 /* Debug */ = {
+		A822DD7026D3EA66006C08CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -442,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -452,7 +501,7 @@
 			};
 			name = Debug;
 		};
-		A82EAC7726CCB93100D47367 /* Release */ = {
+		A822DD7126D3EA66006C08CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -497,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -507,74 +556,184 @@
 			};
 			name = Release;
 		};
-		A82EAC7926CCB93100D47367 /* Debug */ = {
+		A822DD7326D3EA66006C08CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CallBlocker/CallBlocker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6R6MQNLHPL;
 				INFOPLIST_FILE = CallBlocker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesmcdougall.CallBlocker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesMcDougall.CallBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A82EAC7A26CCB93100D47367 /* Release */ = {
+		A822DD7426D3EA66006C08CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CallBlocker/CallBlocker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6R6MQNLHPL;
 				INFOPLIST_FILE = CallBlocker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesmcdougall.CallBlocker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesMcDougall.CallBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A822DD8D26D3EBE4006C08CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6R6MQNLHPL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CallerData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesMcDougall.CallerData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A822DD8E26D3EBE4006C08CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6R6MQNLHPL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CallerData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesMcDougall.CallerData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A822DDA526D3F834006C08CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallBlockerExtension/CallBlockerExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6R6MQNLHPL;
+				INFOPLIST_FILE = CallBlockerExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesMcDougall.CallBlocker.CallBlockerExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A822DDA626D3F834006C08CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallBlockerExtension/CallBlockerExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6R6MQNLHPL;
+				INFOPLIST_FILE = CallBlockerExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesMcDougall.CallBlocker.CallBlockerExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A822DD4E26D3E8C4006C08CF /* Build configuration list for PBXNativeTarget "CallerData" */ = {
+		A822DD5926D3EA64006C08CF /* Build configuration list for PBXProject "CallBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A822DD4F26D3E8C4006C08CF /* Debug */,
-				A822DD5026D3E8C4006C08CF /* Release */,
+				A822DD7026D3EA66006C08CF /* Debug */,
+				A822DD7126D3EA66006C08CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A82EAC5F26CCB92E00D47367 /* Build configuration list for PBXProject "CallBlocker" */ = {
+		A822DD7226D3EA66006C08CF /* Build configuration list for PBXNativeTarget "CallBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A82EAC7626CCB93100D47367 /* Debug */,
-				A82EAC7726CCB93100D47367 /* Release */,
+				A822DD7326D3EA66006C08CF /* Debug */,
+				A822DD7426D3EA66006C08CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A82EAC7826CCB93100D47367 /* Build configuration list for PBXNativeTarget "CallBlocker" */ = {
+		A822DD8C26D3EBE4006C08CF /* Build configuration list for PBXNativeTarget "CallerData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A82EAC7926CCB93100D47367 /* Debug */,
-				A82EAC7A26CCB93100D47367 /* Release */,
+				A822DD8D26D3EBE4006C08CF /* Debug */,
+				A822DD8E26D3EBE4006C08CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A822DDA426D3F834006C08CF /* Build configuration list for PBXNativeTarget "CallBlockerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A822DDA526D3F834006C08CF /* Debug */,
+				A822DDA626D3F834006C08CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -582,18 +741,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A822DD3D26D3E83F006C08CF /* CallBlocker.xcdatamodeld */ = {
+		A822DD7B26D3EB93006C08CF /* CallBlocker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A822DD3E26D3E83F006C08CF /* CallBlocker.xcdatamodel */,
+				A822DD7C26D3EB93006C08CF /* CallBlocker.xcdatamodel */,
 			);
-			currentVersion = A822DD3E26D3E83F006C08CF /* CallBlocker.xcdatamodel */;
-			name = CallBlocker.xcdatamodeld;
-			path = ../CallBlocker/Controllers/ViewControllers/CallBlocker.xcdatamodeld;
+			currentVersion = A822DD7C26D3EB93006C08CF /* CallBlocker.xcdatamodel */;
+			path = CallBlocker.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = A82EAC5C26CCB92E00D47367 /* Project object */;
+	rootObject = A822DD5626D3EA64006C08CF /* Project object */;
 }

@@ -8,6 +8,6 @@
         <attribute name="updatedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <elements>
-        <element name="Caller" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="Caller" positionX="-54" positionY="-9" width="128" height="104"/>
     </elements>
 </model>
