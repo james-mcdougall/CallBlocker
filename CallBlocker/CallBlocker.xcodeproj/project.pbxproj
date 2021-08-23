@@ -25,6 +25,8 @@
 		A88680B526D2ED3E00979E8A /* CallerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88680B426D2ED3E00979E8A /* CallerData.swift */; };
 		A88680C326D342FB00979E8A /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88680C226D342FB00979E8A /* CallDirectoryHandler.swift */; };
 		A88680C726D342FB00979E8A /* CallBlockerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A88680C026D342FB00979E8A /* CallBlockerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A88680CF26D343CA00979E8A /* CallerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88680A326D2ECFA00979E8A /* CallerData.framework */; };
+		A88680D026D343CA00979E8A /* CallerData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A88680A326D2ECFA00979E8A /* CallerData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A89A4DD126CE9462001641E9 /* BlockedCallerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A4DD026CE9462001641E9 /* BlockedCallerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A88680BF26D342FB00979E8A;
 			remoteInfo = CallBlockerExtension;
+		};
+		A88680D126D343CA00979E8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A82EAC5C26CCB92E00D47367 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A88680A226D2ECFA00979E8A;
+			remoteInfo = CallerData;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -66,6 +75,17 @@
 				A88680C726D342FB00979E8A /* CallBlockerExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88680D326D343CA00979E8A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A88680D026D343CA00979E8A /* CallerData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -93,6 +113,7 @@
 		A88680C026D342FB00979E8A /* CallBlockerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallBlockerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88680C226D342FB00979E8A /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
 		A88680C426D342FB00979E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A88680D426D344D500979E8A /* CallBlockerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallBlockerExtension.entitlements; sourceTree = "<group>"; };
 		A89A4DD026CE9462001641E9 /* BlockedCallerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedCallerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A88680CF26D343CA00979E8A /* CallerData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +151,7 @@
 				A88680A426D2ECFA00979E8A /* CallerData */,
 				A88680C126D342FB00979E8A /* CallBlockerExtension */,
 				A82EAC6526CCB92E00D47367 /* Products */,
+				A88680CE26D343CA00979E8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,10 +256,18 @@
 		A88680C126D342FB00979E8A /* CallBlockerExtension */ = {
 			isa = PBXGroup;
 			children = (
+				A88680D426D344D500979E8A /* CallBlockerExtension.entitlements */,
 				A88680C226D342FB00979E8A /* CallDirectoryHandler.swift */,
 				A88680C426D342FB00979E8A /* Info.plist */,
 			);
 			path = CallBlockerExtension;
+			sourceTree = "<group>";
+		};
+		A88680CE26D343CA00979E8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A89A4DCF26CE944F001641E9 /* Cells */ = {
@@ -307,10 +338,12 @@
 				A88680BC26D342FB00979E8A /* Sources */,
 				A88680BD26D342FB00979E8A /* Frameworks */,
 				A88680BE26D342FB00979E8A /* Resources */,
+				A88680D326D343CA00979E8A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A88680D226D343CA00979E8A /* PBXTargetDependency */,
 			);
 			name = CallBlockerExtension;
 			productName = CallBlockerExtension;
@@ -431,6 +464,11 @@
 			isa = PBXTargetDependency;
 			target = A88680BF26D342FB00979E8A /* CallBlockerExtension */;
 			targetProxy = A88680C526D342FB00979E8A /* PBXContainerItemProxy */;
+		};
+		A88680D226D343CA00979E8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A88680A226D2ECFA00979E8A /* CallerData */;
+			targetProxy = A88680D126D343CA00979E8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -675,6 +713,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallBlockerExtension/CallBlockerExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6R6MQNLHPL;
 				INFOPLIST_FILE = CallBlockerExtension/Info.plist;
@@ -695,6 +734,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallBlockerExtension/CallBlockerExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6R6MQNLHPL;
 				INFOPLIST_FILE = CallBlockerExtension/Info.plist;
